@@ -1,0 +1,83 @@
+/* =============================
+   StarAirways Global Variables
+============================= */
+
+:root {
+    --primary-color: #b11226;        /* Sky Blue for CTAs, buttons */
+    --secondary-color: #0b1622;      /* Deep Navy for header, footer */
+    --info-color: #00c2ff;           /* Optional info blue (can stay) */
+    
+    /* color shades var */
+    --shade1: #007acc;               /* Darker blue */
+    --shade2: #005fa3;               /* Even deeper blue */
+    --shade3: #b11226;               /* Used for hover, strong borders */
+    --shade4: #003366;               /* Matches secondary */
+    --shade5: #00224400;
+    --shade6: #c3e6f6;             
+
+    /* color tint var */  
+    --tint1: #f8f8f8;        
+    --tint2: #f7f8fa;        
+    
+    
+    --tint3: #99ddff;
+    --tint4: #cceeff;
+    --tint5: #e6f7ff;
+    --tint6: #f4fbff;
+    --tint7: #66ccff;
+    --tint8: #007bff;
+
+    /* action color var */
+    --warning: #fdbb2d;              /* Golden yellow for alerts or attention */
+    --error: #E53835;                /* Error red stays same */
+    --success: #2E7D31;              /* Green success */
+    --danger: #ff4d4d;               /* Danger red alert */
+    --btn-green: #25d366;            /* Bright danger red */
+
+    /* neutral color var */    
+    --text-color: #666666;           
+    --light-bg: #f9f9f9;             
+    /* --black: #001f33;                 */
+    --d-grey: #4D4D4D;
+    --grey: #717171;
+    --l-grey: #89939E;
+    --vl-grey: #f7f7ff;
+    --grey-blue: #ABBED1;
+    --sliver: #F5F7FA;              
+    --white: #ffffff;
+    --black: #000000;
+
+    /* border color var */
+    --br-tint1: #ddd;
+    --br-tint2: #555;
+    --br-tint3: #333;
+
+    /* Font Families var */
+    --font-head: 'Open Sans', sans-serif;
+    --font-cnt: 'Poppins', sans-serif;
+
+    /* Font Weights */
+    --fw-thin: 100;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-extrabold: 800;
+    
+    /* fonts var */
+    --fs-vsm: 16px;
+    --fs-sm: 20px;
+    --fs-m: 24px;
+    --fs-l: 28px;
+    --fs-xl: 36px;
+    --fs-xxl: 42px;
+
+    /* line heights */
+    --lh-vsm: 24px;
+    --lh-sm: 28px;
+    --lh-m: 32px;
+    --lh-l: 36px;
+    --lh-xl: 44px;
+    --lh-xxl: 48px;
+}
