@@ -72,8 +72,8 @@
                             <h1>Reformulate Airways Excellence</h1>
                             <p>Passenger Handling, Cargo Services, Ramp Operations & Airport Solutions</p>
                             <div class="hb">
-                                <a href="#!" class="cnt-btn1 d-flex align-items-center">Explore Services</a>
-                                <a href="" class="btn2">Contact Us</a>
+                                <a href="services.php" class="cnt-btn1 d-flex align-items-center">Explore Services</a>
+                                <a href="contactus.php" class="btn2">Contact Us</a>
                             </div>
                         </div>
                     </div>
@@ -82,30 +82,280 @@
         </section>
 
         <!-- Work Check Section -->
-        <section class="work-check-sec py-5">
+        <section class="work-check-sec py-5 d-none">
             <div class="container">
                 <div class="work-check-wrp">
                     <div>
                         <h4>Work check link's asian airways website</h4>
                         <ul>
-                            <li><a target="_blank" href="index.html">1. home page</a></li>
-                            <li><a target="_blank" href="network.html">2. network page</a></li>
-                            <li><a target="_blank" href="privacy-policy.html">3. privacy policy page</a></li>
-                            <li><a target="_blank" href="services.html">4. services page</a></li>
-                            <li><a target="_blank" href="terms-conditions.html">5. terms & conditions page</a></li>
-                            <li><a target="_blank" href="holidaypackage.html">6. holidays page</a></li>
-                            <li><a target="_blank" href="clients.html">7. clients page</a></li>
-                            <li><a target="_blank" href="clientele.html">8. clientle page</a></li>
-                            <li><a target="_blank" href="career.html">9. career page</a></li>
-                            <li><a target="_blank" href="academy.html">10. academy page</a></li>
-                            <li><a target="_blank" href="aboutus.html">11. aboutus page</a></li>
-                            <li><a target="_blank" href="faq.html">12. faq page</a></li>
-                            <li><a target="_blank" href="destinations.html">13. destination page</a></li>
-                            <li><a target="_blank" href="blog.html">14. blog page</a></li>
-                            <li><a target="_blank" href="membersplan.html">15. membersplan page</a></li>
-                            <li><a target="_blank" href="certificate.html">16. certificate page</a></li>
+                            <li><a target="_blank" href="index.php">1. home page</a></li>
+                            <li><a target="_blank" href="network.php">2. network page</a></li>
+                            <li><a target="_blank" href="privacy-policy.php">3. privacy policy page</a></li>
+                            <li><a target="_blank" href="services.php">4. services page</a></li>
+                            <li><a target="_blank" href="terms-conditions.php">5. terms & conditions page</a></li>
+                            <li><a target="_blank" href="holidaypackage.php">6. holidays page</a></li>
+                            <li><a target="_blank" href="clients.php">7. clients page</a></li>
+                            <li><a target="_blank" href="clientele.php">8. clientle page</a></li>
+                            <li><a target="_blank" href="career.php">9. career page</a></li>
+                            <li><a target="_blank" href="academy.php">10. academy page</a></li>
+                            <li><a target="_blank" href="aboutus.php">11. aboutus page</a></li>
+                            <li><a target="_blank" href="faq.php">12. faq page</a></li>
+                            <li><a target="_blank" href="destinations.php">13. destination page</a></li>
+                            <li><a target="_blank" href="blog.php">14. blog page</a></li>
+                            <li><a target="_blank" href="membersplan.php">15. membersplan page</a></li>
+                            <li><a target="_blank" href="certificate.php">16. certificate page</a></li>
                         </ul>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- tab section start -->
+        <section class="tab-section py-md-5 py-4 d-none">
+            <div class="container">
+                <div class="tab-wrapper">
+                    <!-- Tabs -->
+                    <div class="tab-container">
+                        <button class="tab-btn active" data-tab="flights">✈ Flights</button>
+                        <button class="tab-btn" data-tab="hotels">🏨 Hotels</button>
+                        <button class="tab-btn" data-tab="cars">🚗 Cars</button>
+                        <button class="tab-btn" data-tab="bus">🚌 Bus</button>
+                        <button class="tab-btn" data-tab="cruise">🚢 Cruise</button>
+                        <button class="tab-btn" data-tab="insurance">🛡 Travel Insurance</button>
+                        <button class="tab-btn" data-tab="destinations">📍 Destinations</button>
+                    </div>
+
+                    <!-- Flights -->
+                    <div id="flights" class="tab-content active">
+                        <!-- Tab Section -->
+                        <div class="tab-switch-sec">
+                            <div class="tab-switch pb-2 d-flex gap-1">
+                                <button class="tab-switch-btn active-tab-switch" data-tab="oneway">One Way</button>
+                                <button class="tab-switch-btn" data-tab="roundtrip">Round Trip</button>
+                            </div>
+
+                            <!-- oneway -->
+                            <form class="search-form tab-switch-content active-tab-switch" id="oneway">
+                                <div class="form-group">
+                                    <label>From</label>
+                                    <input type="text" placeholder="Delhi (DEL)">
+                                </div>
+                                <div class="form-group">
+                                    <label>To</label>
+                                    <input type="text" placeholder="Hyderabad (HYD)">
+                                </div>
+                                <div class="form-group">
+                                    <label>Journey Date</label>
+                                    <input type="date">
+                                </div>
+                                <div class="form-group">
+                                    <label>Travellers & Class</label>
+                                    <select>
+                                        <option>1 Traveller, Economy</option>
+                                        <option>2 Travellers, Economy</option>
+                                        <option>1 Traveller, Business</option>
+                                    </select>
+                                </div>
+                                <div class="w-100 d-flex align-items-center justify-content-center ">
+                                    <div class="form-group" style="flex: 1 1 100%;">
+                                        <label class="mb-0">Select Fare Type</label>
+                                        <div class="fare-type">
+                                            <label class="mb-0"><input type="radio" name="fare" checked> Regular
+                                                Fares</label>
+                                            <label class="mb-0"><input type="radio" name="fare"> Student</label>
+                                            <label class="mb-0"><input type="radio" name="fare"> Defence Forces</label>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a href="oneway.php" type="submit" class="search-btn mt-0"> Search </a>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <!-- roundtrip -->
+                            <form class="search-form tab-switch-content" id="roundtrip">
+                                <div class="form-group">
+                                    <label>From</label>
+                                    <input type="text" placeholder="Delhi (DEL)">
+                                </div>
+                                <div class="form-group">
+                                    <label>To</label>
+                                    <input type="text" placeholder="Hyderabad (HYD)">
+                                </div>
+                                <div class="form-group">
+                                    <label>Journey Date</label>
+                                    <input type="date">
+                                </div>
+                                <div class="form-group">
+                                    <label>Return Date</label>
+                                    <input type="date">
+                                </div>
+                                <div class="form-group">
+                                    <label>Travellers & Class</label>
+                                    <select>
+                                        <option>1 Traveller, Economy</option>
+                                        <option>2 Travellers, Economy</option>
+                                        <option>3 Traveller, Business</option>
+                                    </select>
+                                </div>
+                                <!-- <div class="form-group" style="flex: 1 1 100%;">
+                                <label>Select Fare Type</label>
+                                <div class="fare-type">
+                                    <label><input type="radio" name="fare" checked> Regular Fares</label>
+                                    <label><input type="radio" name="fare"> Student</label>
+                                    <label><input type="radio" name="fare"> Defence Forces</label>
+                                </div>
+                            </div>
+                            <a href="#!" type="submit" class="search-btn mt-0"> Search </a> -->
+                                <div class="w-100 d-flex align-items-center justify-content-center ">
+                                    <div class="form-group" style="flex: 1 1 100%;">
+                                        <label class="mb-0">Select Fare Type</label>
+                                        <div class="fare-type">
+                                            <label class="mb-0"><input type="radio" name="fare" checked> Regular
+                                                Fares</label>
+                                            <label class="mb-0"><input type="radio" name="fare"> Student</label>
+                                            <label class="mb-0"><input type="radio" name="fare"> Defence Forces</label>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a href="roundtrip.php" type="submit" class="search-btn mt-0"> Search </a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+
+                    <!-- Hotels -->
+                    <div id="hotels" class="tab-content">
+                        <h3>Search Hotels</h3>
+                        <form class="search-form">
+                            <div class="form-group">
+                                <label>Destination</label>
+                                <input type="text" placeholder="City or Hotel Name">
+                            </div>
+                            <div class="form-group">
+                                <label>Check-in Date</label>
+                                <input type="date">
+                            </div>
+                            <div class="form-group">
+                                <label>Check-out Date</label>
+                                <input type="date">
+                            </div>
+                            <div class="form-group">
+                                <label>Guests</label>
+                                <select>
+                                    <option>1 Adult</option>
+                                    <option>2 Adults</option>
+                                    <option>Family</option>
+                                </select>
+                            </div>
+                            <!-- <button type="submit" class="search-btn mt-0 mt-sm-auto">Search</button> -->
+                            <div>
+                                <a href="hotel_list.php" type="submit" class="search-btn mt-md-3 mt-0"> Search </a>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Cars -->
+                    <div id="cars" class="tab-content">
+                        <h3>Rent a Cars </h3>
+                        <form class="search-form">
+                            <div class="form-group">
+                                <label>Form</label>
+                                <input type="text" placeholder="Enter Pick-up Location">
+                            </div>
+                            <div class="form-group">
+                                <label>To</label>
+                                <input type="text" placeholder="Enter Drop Location">
+                            </div>
+                            <div class="form-group">
+                                <label>Pick-up Date</label>
+                                <input type="date">
+                            </div>
+                            <div class="form-group">
+                                <label>Pick-up Time</label>
+                                <input type="time">
+                            </div>
+                            <!-- <button type="submit" class="search-btn">Search</button> -->
+                            <div>
+                                <a href="cars_list.php" type="submit" class="search-btn mt-md-3 mt-0"> Search </a>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Bus -->
+                    <div id="bus" class="tab-content">
+                        <h3>Book Bus Tickets</h3>
+                        <form class="search-form">
+                            <div class="form-group">
+                                <label>From</label>
+                                <input type="text" placeholder="Enter Starting City">
+                            </div>
+                            <div class="form-group">
+                                <label>To</label>
+                                <input type="text" placeholder="Enter Destination City">
+                            </div>
+                            <div class="form-group">
+                                <label>Journey Date</label>
+                                <input type="date">
+                            </div>
+                            <div class="form-group">
+                                <label>Journey Time</label>
+                                <input type="time">
+                            </div>
+                            <button type="submit" class="search-btn">Search</button>
+                        </form>
+                    </div>
+
+                    <!-- Cruise -->
+                    <div id="cruise" class="tab-content">
+                        <h3>Book a Cruise</h3>
+                        <form class="search-form">
+                            <div class="form-group">
+                                <label>Destination</label>
+                                <input type="text" placeholder="Cruise Destination">
+                            </div>
+                            <div class="form-group">
+                                <label>Departure Date</label>
+                                <input type="date">
+                            </div>
+                            <button type="submit" class="search-btn mt-0 mt-sm-auto">Search</button>
+                        </form>
+                    </div>
+
+                    <!-- Travel Insurance -->
+                    <div id="insurance" class="tab-content">
+                        <h3>Get Travel Insurance</h3>
+                        <form class="search-form">
+                            <div class="form-group">
+                                <label>Travel Start Date</label>
+                                <input type="date">
+                            </div>
+                            <div class="form-group">
+                                <label>Travel End Date</label>
+                                <input type="date">
+                            </div>
+                            <div class="form-group">
+                                <label>Destination</label>
+                                <input type="text" placeholder="Country">
+                            </div>
+                            <button type="submit" class="search-btn">Get Quote</button>
+                        </form>
+                    </div>
+
+                    <!-- Destinations -->
+                    <div id="destinations" class="tab-content">
+                        <h3>Explore Destinations</h3>
+                        <form class="search-form">
+                            <div class="form-group">
+                                <label>Destination</label>
+                                <input type="text" placeholder="City or Country">
+                            </div>
+                            <button type="submit" class="search-btn">Search</button>
+                        </form>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -136,12 +386,9 @@
                             from ground handling and passenger
                             assistance to apron services and air cargo management—are executed by industry experts who
                             recognize the critical nature of your operations.
-                            Consequently, every passenger interaction is an opportunity to co-create an exceptional
-                            travel experience, every cargo shipment represents a
-                            pledge of pristine delivery, and all ramp operations reflect our unwavering dedication to
-                            safety and security.
                         </p>
-                        <a href="#!" class="cnt-btn1">Read More <i class="ps-2 c-white fs-5 fa-solid fa-plane"></i></a>
+                        <a href="aboutus.php" class="cnt-btn1">Read More <i
+                                class="ps-2 c-white fs-5 fa-solid fa-plane"></i></a>
                     </div>
                     <div class="ar">
                         <img src="assets/images/home/home-about-right.png">
@@ -196,32 +443,50 @@
                     <div class="srvc">
                         <img src="assets/images/home/service-img-1.png">
                         <h3>Passenger Handling</h3>
-                        <p>Complete airport passenger support services.</p>
+                        <p>Complete airport passenger services.</p>
+                        <p>Passenger handling is the process of guiding travelers from check-in to boarding. It combines
+                            safety checks and baggage logistics with customer service to ensure a smooth, efficient
+                            journey through the airport terminal.</p>
                     </div>
                     <div class="srvc">
                         <img src="assets/images/home/service-img-2.png">
                         <h3>Cargo Handling</h3>
                         <p>Safe and efficient cargo operations.</p>
+                        <p>Cargo handling is the process of preparing, securing, and loading freight for transport. It
+                            ensures goods are processed quickly, safely, and accurately to keep global supply chains
+                            moving.</p>
                     </div>
                     <div class="srvc">
                         <img src="assets/images/home/service-img-3.png">
                         <h3>Ramp Services</h3>
                         <p>Aircraft turnaround support solutions.</p>
+                        <p>Ramp services involve managing an aircraft while it is parked on the ground. This includes
+                            marshalling the plane, loading baggage, fueling, and towing the aircraft safely back out for
+                            departure to ensure on-time flights.</p>
                     </div>
                     <div class="srvc">
                         <img src="assets/images/home/service-img-4.png">
                         <h3>Ground Operations</h3>
                         <p>Reliable airport ground services.</p>
+                        <p>Ground operations encompass all behind-the-scenes airport services that happen while an
+                            aircraft is on the ground. It combines passenger handling, cargo management, and ramp
+                            services to ensure flights are safe, on time, and ready for departure.</p>
                     </div>
                     <div class="srvc">
                         <img src="assets/images/home/service-img-5.png">
                         <h3>VIP Services</h3>
                         <p>Premium passenger experience.</p>
+                        <p>VIP services provide premium, personalized care for high-profile travelers. This includes
+                            expedited security, private lounge access, and dedicated escort services to ensure maximum
+                            privacy, comfort, and speed through the airport.</p>
                     </div>
                     <div class="srvc">
                         <img src="assets/images/home/service-img-1.png">
                         <h3>Airport Support</h3>
                         <p>End-to-end Airways solutions.</p>
+                        <p>Airport support refers to the essential technical and maintenance services that keep an
+                            airport running behind the scenes. This includes managing airfield lighting, maintaining
+                            runways, operating backup power systems, and servicing airport vehicles</p>
                     </div>
                 </div>
             </div>
@@ -310,7 +575,7 @@
                             <li>Aircraft Maintenance & Engineering</li>
                             <li>Airport Ground Services</li>
                         </ul>
-                        <a href="#!" class="cnt-btn1">Join Our Team</a>
+                        <a href="contactus.php" class="cnt-btn1">Join Our Team</a>
                     </div>
                 </div>
             </div>
@@ -378,7 +643,7 @@
                             <span>15 July 2024</span>
                             <h5>Asian Airways Expands Airport Operations</h5>
                             <p>New airport service contracts signed across India.</p>
-                            <a href="#!" class="cnt-btn1">Read More</a>
+                            <a href="network.php" class="cnt-btn1">Read More</a>
                         </div>
                     </div>
                     <div class="nc">
@@ -387,7 +652,7 @@
                             <span>08 April 2025</span>
                             <h5>New Cargo Facility Launched</h5>
                             <p>Enhancing cargo handling capacity nationwide.</p>
-                            <a href="#!" class="cnt-btn1">Read More</a>
+                            <a href="network.php" class="cnt-btn1">Read More</a>
                         </div>
                     </div>
                     <div class="nc">
@@ -396,7 +661,7 @@
                             <span>02 June 2026</span>
                             <h5>Employee Excellence Awards</h5>
                             <p>Recognizing outstanding Airways professionals.</p>
-                            <a href="#!" class="cnt-btn1">Read More</a>
+                            <a href="network.php" class="cnt-btn1">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -407,7 +672,7 @@
         <section class="cta">
             <div class="container">
                 <div class="row ctaw">
-                    <div class="col-md-9">
+                    <div class="col-lg-9 col-md-8">
                         <span>LET'S CONNECT</span>
                         <h2>Partner With Asian Airways</h2>
                         <p>Discover Airways solutions tailored to your business.</p>
@@ -415,8 +680,8 @@
                             support your business growth, enhance operational efficiency, and create long-term value
                             through trusted airline collaboration.</p>
                     </div>
-                    <div class="col-md-3 text-end">
-                        <a href="" class="btn2">Contact Us</a>
+                    <div class="col-lg-3 col-md-4 text-md-end">
+                        <a href="contactus.php" class="btn2">Contact Us</a>
                     </div>
                 </div>
             </div>
